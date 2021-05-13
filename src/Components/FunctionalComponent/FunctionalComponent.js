@@ -8,7 +8,7 @@ export default function FunctionalComponent(props) {
     return (
         <div>
             <p>
-                name :- {x}
+                name :- x
             </p>
             <p>{props.name.name}</p>
             <p> age :-  {props.name.age}</p>
