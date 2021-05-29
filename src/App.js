@@ -1,18 +1,20 @@
 import logo from './logo.svg';
+
 import './App.css';
-import MainPage from './component/MainPage';
 import FunctionalComponent from './Components/FunctionalComponent/FunctionalComponent';
 import SecondClassComponent from './Components/MySecondComponent/SecondClassComponent';
-import State1 from './Components/State/State1';
-
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-       
-      {/* <MainPage></MainPage>
-      <SecondClassComponent  name={ {"name":"harinath", "age":"26","place":"hyderabad"} }></SecondClassComponent> */}
-      <State1></State1>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/FirstPage" component={FunctionalComponent} />
+          <Route path="/SecondPage" component={SecondClassComponent} />
+        </Switch>
+      </BrowserRouter>
+
     </div>
   );
 }
