@@ -9,12 +9,13 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Switch>
-          <Route path="/FirstPage" component={FunctionalComponent} />
-          <Route path="/SecondPage" component={SecondClassComponent} />
-        </Switch>
+      <Switch>
+        <Route path="/first"><FunctionalComponent/> </Route>
+        <Route path = "/second"> <SecondClassComponent></SecondClassComponent></Route>
+      </Switch>
       </BrowserRouter>
-
+    
+   
     </div>
   );
 }
